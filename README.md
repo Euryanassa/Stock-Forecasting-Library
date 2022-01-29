@@ -130,15 +130,6 @@ stock = sp(stock_name = 'TSLA',
 pred, df_datetime = stock.prediction(epochs = 10)
 ```
 
-    INFO - (NP.forecaster._handle_missing_data) - 1026 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 1026 NaN values in column y were auto-imputed.
-    Epoch[10/10]: 100%|██████████| 10/10 [00:02<00:00,  3.95it/s, SmoothL1Loss=0.000534, MAE=9.59, RMSE=20.7, RegLoss=0]
-    WARNING - (NP.forecaster.predict) - raw forecasts are incompatible with plotting utilities
-    INFO - (NP.forecaster._handle_missing_data) - 3 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 3 NaN values in column y were auto-imputed.
-
-
-
 ```python
 sp.plot_2d(stock, pred, df_datetime)
 ```
@@ -155,15 +146,6 @@ sp.plot_2d(stock, pred, df_datetime)
 ```python
 sp.easy_mode('AAPL', 30)
 ```
-
-    INFO - (NP.forecaster._handle_missing_data) - 1029 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 1029 NaN values in column y were auto-imputed.
-    Epoch[200/200]: 100%|██████████| 200/200 [00:55<00:00,  3.62it/s, SmoothL1Loss=0.000345, MAE=2.01, RMSE=3.23, RegLoss=0]
-    WARNING - (NP.forecaster.predict) - raw forecasts are incompatible with plotting utilities
-    INFO - (NP.forecaster._handle_missing_data) - 3 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 3 NaN values in column y were auto-imputed.
-
-
 
     
 ![png](README_files/README_14_1.png)
@@ -188,15 +170,6 @@ sp.easy_mode('AAPL', 30)
 ```python
 sp.easy_mode_model_test('AAPL', 30)
 ```
-
-    INFO - (NP.forecaster._handle_missing_data) - 1014 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 1014 NaN values in column y were auto-imputed.
-    Epoch[200/200]: 100%|██████████| 200/200 [00:56<00:00,  3.54it/s, SmoothL1Loss=0.000345, MAE=1.93, RMSE=3.14, RegLoss=0]
-    WARNING - (NP.forecaster.predict) - raw forecasts are incompatible with plotting utilities
-    INFO - (NP.forecaster._handle_missing_data) - 2 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 2 NaN values in column y were auto-imputed.
-
-
 
     
 ![png](README_files/README_16_1.png)
