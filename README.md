@@ -104,14 +104,6 @@ test
 pred, df_datetime = stock.prediction(epochs = 100)
 ```
 
-    INFO - (NP.forecaster._handle_missing_data) - 1023 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 1023 NaN values in column y were auto-imputed.
-    Epoch[100/100]: 100%|██████████| 100/100 [00:25<00:00,  3.89it/s, SmoothL1Loss=0.000317, MAE=7.33, RMSE=15.5, RegLoss=0]
-    WARNING - (NP.forecaster.predict) - raw forecasts are incompatible with plotting utilities
-    INFO - (NP.forecaster._handle_missing_data) - 2 missing dates added.
-    INFO - (NP.forecaster._handle_missing_data) - 2 NaN values in column y were auto-imputed.
-
-
 
 ```python
 sp.plot_2d(stock, pred, df_datetime, true)
