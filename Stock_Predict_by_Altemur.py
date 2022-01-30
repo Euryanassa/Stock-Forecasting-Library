@@ -115,7 +115,7 @@ class Stock_Predictor:
         plt.tick_params(axis = 'x', rotation = 65)
         plt.ylabel('Amount Sold / Day')
         plt.grid(color='w', linestyle=':', linewidth=0.5, alpha = 0.7)
-        plt.legend(('Actual','Predicted','Upper','Lower'))
+        plt.legend(('Predicted','Actual','Upper','Lower'))
 
         plt.show()
     
