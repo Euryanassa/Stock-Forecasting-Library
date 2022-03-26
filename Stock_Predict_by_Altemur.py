@@ -61,7 +61,7 @@ class Stock_Predictor:
         if self.tester_mode == True:         
             train, _ = Stock_Predictor.stock_data(self)
         else:
-            train = Stock_Predictor.stock_data(self)
+            train, _ = Stock_Predictor.stock_data(self)
         m.fit(train, freq="D", epochs = epochs)
         future = m.make_future_dataframe(train, periods = self.day_to_forecast)
         forecast_n = m.predict(future, decompose = True, raw = True)
